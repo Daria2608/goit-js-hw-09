@@ -1,0 +1,1 @@
+.gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;list-style:none;width:1128px;margin:0 auto;column-gap:24px;row-gap:48px;padding:100px}; img{display:block;max-width:100%}a{text-decoration:none}.sl-wrapper{background-color:#2e2f42cc}
