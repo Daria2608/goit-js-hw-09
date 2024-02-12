@@ -32,13 +32,15 @@ form.addEventListener('submit', userSubmit)
 
 function userSubmit(event) {
     event.preventDefault()
-    if (input.value.trim() && message.value.trim()) {
+    if (input.value.trim() !== "" && message.value.trim() !== "") {
         console.log({
             email: input.value.trim(),
             message: message.value.trim(),
         })
     }
-    
+    else {
+        alert("Будь ласка, заповніть усі поля")
+    }
     localStorage.removeItem(keyOfStorage);
     form.reset()
 }
