@@ -1,5 +1,3 @@
-console.log("form");
-
 const form = document.querySelector('form')
 const input = document.querySelector('input')
 const message = document.querySelector('textarea')
@@ -17,7 +15,6 @@ function readForm (form) {
 }
 
 form.addEventListener('input', (event) => {
-    event.preventDefault();
     const data = readForm(event.currentTarget);
     const jsonData = JSON.stringify(data);
     localStorage.setItem(keyOfStorage, jsonData)
@@ -41,5 +38,7 @@ function userSubmit(event) {
             message: message.value.trim(),
         })
     }
-    localStorage.removeItem(keyOfStorage)
+    
+    localStorage.removeItem(keyOfStorage);
+    form.reset()
 }

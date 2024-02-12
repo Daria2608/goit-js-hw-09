@@ -94,7 +94,7 @@ imageStyles.forEach(element => element.style.height = "200px");
 
 const lightbox = new SimpleLightbox('.gallery-link', {
   captionsData: 'alt',
-  captiomDelay: 250,
+  captionDelay: 250,
   captionPosition: 'bottom'
 });
 
